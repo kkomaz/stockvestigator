@@ -3,9 +3,11 @@
 Welcome to the Stockvestigator 3000, a stocks information gathering service with a command line interface.
 
 Gem inspiration originally came from a group project (Jeremy Sklarsky) working on a CLI interface for stock information look-up
+
 github-link: https://github.com/jeremysklarsky/stock-cli
 
 Leverages off the stock_quote gem located here:
+
 github-link: https://github.com/tyrauber/stock_quote
 
 ## Installation
