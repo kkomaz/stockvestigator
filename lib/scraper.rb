@@ -47,7 +47,5 @@ class Scraper
 
     end
     headline_array[0..9]
-
   end
- 
 end
