@@ -4,15 +4,13 @@ module Stockvestigator
 
   class StockCLI
     
-    def call
+    def menu
       puts "Welcome to the Stockvestigator 3000"
       puts "Dow: #{index_prices[0][0]}: #{index_prices[0][1]}"
       puts "Nasdaq: #{index_prices[1][0]}: #{index_prices[1][1]}"
       puts "S+P: #{index_prices[2][0]}: #{index_prices[2][1]}"
-    end
-
-    def menu    
       puts "Enter a stock ticker symbol or type exit to close the program."
+
       input = gets.strip.downcase
       if input.downcase != "exit"
         display_stock_info(input)
@@ -25,12 +23,9 @@ module Stockvestigator
       html.search("div.module-body.row.tickers li.column").each do |column|
         indexes << [column.search("span.ticker-points").text, 
                     column.search("span.posData").text.gsub("%", "% ")]
-        
       end
       indexes
-      
     end
-
 
     def display_stock_info(input)   
       scrape = Scraper.new(input)

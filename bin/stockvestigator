@@ -1,9 +1,8 @@
-#!/usr/bin/env ruby
-
 require 'stockvestigator'
 require 'scraper'
 require 'open-uri'
 require 'nokogiri'
+require 'stock_quote'
 
 instance = Stockvestigator::StockCLI.new
-instance.call
+instance.menu
