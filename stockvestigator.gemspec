@@ -8,8 +8,8 @@ Gem::Specification.new do |spec|
   spec.version       = Stockvestigator::VERSION
   spec.authors       = ["kkomaz"]
   spec.email         = ["leeajl006@gmail.com"]
-  spec.summary       = %q{TODO: Write a short summary. Required.}
-  spec.description   = %q{TODO: Write a longer description. Optional.}
+  spec.summary       = %q{Welcome to the Stockvestigator 3000, a stocks information gathering service with a command line interface.}
+  spec.description   = %q{Type 'stockvestigator' to start!}
   spec.homepage      = ""
   spec.license       = "MIT"
 

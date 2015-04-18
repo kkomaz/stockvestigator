@@ -1,0 +1,8 @@
+#!/usr/bin/env ruby
+
+require 'stockvestigator'
+require 'scraper'
+require 'open-uri'
+
+instance = Stockvestigator::StockCLI.new
+instance.call
